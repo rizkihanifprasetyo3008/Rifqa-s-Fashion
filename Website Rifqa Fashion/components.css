@@ -1,0 +1,427 @@
+/* Style buat Navigation */
+.nav{
+    padding: 2rem 0;
+}
+
+.nav__icon,
+.nav__close,
+.nav__bgOverlay {
+    display: none;
+}
+
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__wrapper img{
+    width: 80%;
+    margin-left: -30px;
+    margin-top: -6px;
+} 
+.nav__list li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+.nav__list .nav__link{
+    font-size: 12px;
+    font-family: 'Poppins';
+    color: var(--black-2);
+    padding: 0.5rem;
+}
+.nav__list li:hover .nav__link{
+    color: var(--pink-1);
+    transition: .2s ease-in;
+}
+.nav__list__wrapper #tanda{
+    color: var(--pink-1);
+}
+
+/* nav untuk mobile screen */
+@media only screen and (max-width: 768px){
+    .nav{
+        position: relative;
+    }
+    .nav__icon{
+        display: block;
+    }
+    .nav__icon svg,
+    .nav__close svg {
+        pointer-events: none;
+        height: 30px;
+        width: 30px;
+    }
+    .nav__icon{
+        cursor: pointer;
+    }
+    .nav__close {
+        display: block;
+        position: absolute;
+        color: var(--black-1);
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+    }
+    /* untuk buat hamburger menu list */
+
+    .nav__list{
+        transform: translate(0%);
+        display: none;
+       
+    }
+    
+    .nav__list.show{  
+        z-index: 1000;
+        position: absolute;
+        left: 100%; 
+        top: 0;
+        height: 100vh;
+        width: 80%;
+        background: var(--lightpink-1);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 2rem;
+        transform: translate(-100%);
+        overflow: hidden;
+        transition: .3s ease-in transform;
+    }
+    .nav__list.show li{
+        display: block;
+        text-align: right;
+        margin-bottom: 2rem;
+    }
+    .nav__list.show .nav__link{
+        font-size: 20px;
+    }
+    .nav__list.show .btn{
+        font-size: 20px;
+    }
+    .nav__bgOverlay{
+        display: none;
+        
+    }
+    .nav__bgOverlay.active{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+        background: rgba(18, 24, 14, 0.808);
+        display: block;
+       
+    }
+}
+    /* Akhir nav untuk mobile screen */
+/* Tombol untuk Login */
+.btn{
+    color: var(--pink-1);
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 1.2rem 2rem;
+
+}
+.primary-btn{
+    color: var(--white-1);
+    background: var(--pink-1);
+}
+
+/* Layar Full Komputer */
+@media only screen and  (min-width: 768px){
+    .btn{
+        padding: 1.3rem 2rem;
+        font-size: 16px;
+    }
+    .nav__list .nav__link{
+        font-size: 16px;
+    }
+}
+/* Akhir layar full komputer */
+
+/* akhir tombol untuk login */
+
+/* akhir Style buat Navigation */
+
+
+
+
+
+
+/* Style untuk footer */
+    /* Mobile Device */
+footer {
+    background-color: var(--lightpink-1);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.footer__logo{
+    width: 250px;
+    margin-bottom: 1rem;
+    margin-left: -16px;
+}
+.footer__desc{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    margin-bottom: 3rem;
+}
+.footer__socials__title{
+    font-size: 1.8rem;
+    color: var(--black-2);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer__socials li{
+    display: inline-block;
+    margin-right: .5rem;
+}
+.footer__socials a{
+    padding: .5rem .8rem;
+    background-color: var(--lightpink-2);
+    border: 1px solid var(--pink-2);
+    border-radius: 10px;
+}
+.footer__socials a:hover{
+    background-color: var(--pink-2);
+    transition: .3s ease-in-out;
+}
+.footer__socials svg{
+    width: 20px;
+    color: var(--black-2);
+}
+.footer__text__title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+    font-weight: 600;
+}
+.footer__Text a{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: var(--black-2);
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+.footer__Text a:hover{
+    color: var(--pink-1);
+    transition: .3s ease-in-out;
+}
+#copyright{
+    padding: 1rem 0;
+    background-color: var(--black-2);
+}
+.copyright__text{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--white-1);
+}
+    /* Akhir styling Mobile device */
+    /* Layar Styling penuh Komputer */
+@media only screen and (min-width: 768px){
+    footer{
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+    .footer__wrapper{
+        flex-direction: row;
+    }
+    .footer__col1{
+        flex: 4;
+    }
+    .footer__col2,
+    .footer__col3,
+    .footer__col4 {
+        flex: 2;
+    }
+    .footer__desc{
+        max-width: 300px;
+        font-size: 1.8rem;
+        letter-spacing: .2px;
+        line-height: 30px;
+        margin-bottom: 2.5rem;
+    }
+    .footer__socials__title{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer__text__title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer__Text a{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        line-height: 20px;
+    }
+    .copyright__text{
+        font-size: 1.6rem;
+    }
+    
+}
+
+
+
+
+    /* Akhir Styling Layar penuh Komputer */
+/* Akhir Style untuk footer */
+
+
+
+/* style untuk storeinfo */
+/* style untuk hape */
+.storeinfo__wrapper {
+    display: flex;
+    align-items: stretch;  /*ukuran background color sama*/
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: -100px;
+}
+.storeinfo__item {
+    background-color: var(--lightpink-1);
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 12px;
+    width: 150px;
+}
+.storeinfo__icon {
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+.storeinfo__title {
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: var(--black-1);
+}
+.storeinfo__text {
+    font-size: 1.4rem;
+    font-family: Raleway;
+    color: var(--black-2);
+}
+/* akhir style untuk hp */
+/* style untuk layar penuh */
+@media only screen and (min-width:768px){
+    .storeinfo__wrapper{
+        gap: 3rem;
+    }
+    .storeinfo__item{
+        min-width: 200px;
+        padding: 40px 0;
+    }
+    .storeinfo__icon{
+        width: 50px;
+        margin-bottom: 2.5rem;
+    }
+    .storeinfo__title{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .footer__Text{
+        font-size: 1.6rem;
+    }
+}
+
+
+/* akhir style untuk layar penuh */
+
+
+/* Akhir style untuk storeinfo */
+
+
+
+/* style untuk form di contact.html */
+/* mobile device */
+#form{
+    padding: 5rem 0;
+}
+.form__title {
+    font-size: 1.8rem;
+    color: var(--black-1);
+    font-weight: 600;
+}
+.form__wrapper{
+    padding: 3rem 0;
+}
+.form__wrapper form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.form__group label{
+    font-size: 1.6rem;
+    font-family: Poppins;
+    color: var(--black-2);
+    font-weight: 500;
+}
+.form__group input,
+.form__group textarea,
+.form__group select{
+    width: 100%;
+    border: none;
+    background-color: var(--lightpink-1);
+    font-size: 1.4rem;
+    font-family: Raleway;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    color: var(--black-2);
+    border: .5px solid var(--pink-2);
+    border-radius: 8px;
+}
+.form__group input::placeholder{
+    color: rgb(168, 166, 166);
+    font-weight: 400;
+}
+.form__group textarea::placeholder{
+    color: rgb(168, 166, 166);
+    font-weight: 400;
+}
+.form__group textarea{
+    resize: vertical;
+}
+.form__wrapper button[type=submit]{
+    width: max-content;
+    border: none;
+    padding: 1rem 4rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+/* end mobile device */
+/* Full screen device */
+@media only screen and (min-width: 768px){
+    .form__title{
+        font-size: 3.6rem;
+    }
+    .form__wrapper{
+        padding: 5rem 0;
+    }
+    .form__wrapper form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .form__group__full{
+        grid-column: 1/3;
+    }
+    .form__group label{
+        font-size: 1.8rem;
+    }
+    .form__group input,
+    .form__group textarea,
+    .form__group select{
+        font-size: 1.8rem;
+        padding: 2rem;
+        margin-top: 1.5rem;
+    }
+}
+/* End Full screen device */
+/* End style untuk form di contact.html */

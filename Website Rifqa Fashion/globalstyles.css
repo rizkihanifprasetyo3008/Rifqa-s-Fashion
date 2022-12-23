@@ -1,0 +1,73 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@400;500;600&display=swap');
+
+
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+/* Variabel warna supaya tidak bingung */
+:root {
+	--pink-1: #FF9494;
+	--pink-2: #FFD1D1;
+	--lightpink-1: #FFE3E1;
+	--lightpink-2: #FFF5E4;
+	--black-1: #3b413a;
+	--black-2: #3f3c3c;
+	--black-3: #5b6359;
+	--white-1: #e8e8e8;
+}
+
+body {
+    background-color: var(--lightpink-2); 
+}
+
+/* tiap section 100px */
+section{
+    padding: 100px 0;
+}
+
+
+/* responsif untuk screen/layar max ukuran 760px atau hape*/
+@media only screen and(max-width:760px){
+    section{
+        padding: 50px 0;
+    }
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Poppins;
+    
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.4rem;
+    font-size: 1.8rem;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+

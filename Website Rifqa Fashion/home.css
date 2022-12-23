@@ -1,0 +1,975 @@
+/* Section Utama */
+
+/* Mobile Device */
+.utama__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.utama__left__wrapper{
+    max-width: 360px;
+}
+
+.utama__imgwrapper{
+    max-width: 400px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.utama__imgwrapper .img_edit{
+    width: 50%;
+    border: 0.1px solid var(--pink-1);
+    border-radius: 5%;
+    padding: 4px;
+    margin-left: -50px;
+}
+.utama__imgwrapper .utama__imgwrapper__right #img__edit{
+    width: 118%;
+    margin-left: 20px;
+    padding: 4px;
+    border: 0.1px solid var(--pink-1);
+    border-radius: 5%;
+    background-color: var(--lightpink-2);
+    margin-bottom: 20px;
+
+}
+
+
+
+.utama__heading{
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--black-1);
+}
+.utama__heading span{
+    color: var(--pink-1);
+
+}
+.utama__info{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--black-2);
+    line-height: 25px;
+}
+.button__wrapper{
+    text-align: center;
+}
+.button__wrapper .btn:hover{
+    color: var(--black-2);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Akhir Mobile device */
+
+/* Buat layar gede/komputer */
+@media only screen and (min-width: 768px) {
+    .utama__wrapper{
+        flex-direction: row;
+        gap: 0;
+    }
+    .utama__left{
+        flex: 3;
+        margin-top: -100px;
+    }
+    .utama__right{
+        flex: 4;
+    }
+    .utama__heading{
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+        text-align: left;
+        line-height: 45px;
+    }
+    .utama__info{
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.8rem;
+    }
+    .button__wrapper{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .button__wrapper a{
+        font-size: 15px;
+    }
+    .utama__imgwrapper{
+        max-width: none;
+        width: 80%;
+        margin-left: 18px;
+    }
+    
+}
+
+@media only screen and (max-width:1000px){
+    .utama__imgwrapper{
+        width: 60%;
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width:635px){
+    .utama__right{
+        margin-right: 90px;
+    }
+}
+
+
+
+/* Akhir Buat layar gede/komputer */
+
+
+
+/* Akhir Section Utama */
+
+
+/* Styling Best Seller*/
+/* MOBILE DEVICE */
+#bestselling{
+    padding-top: 10rem;
+}
+.bestselling__wrapper{
+    display: flex;   
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: -150px;
+}
+.bestselling__left{
+    display: flex;
+    gap: 1rem;
+}
+.bestselling__item{
+    background-color: var(--lightpink-1);
+    padding: 1.2rem;
+    padding-top: 5rem;
+    border-radius: 12px;
+}
+.bestselling__item__img{
+    margin-top: -25px;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+.bestselling__item__img img{
+    object-fit: cover;
+}
+
+.bestselling__item__title{
+    font-size: 1.4rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.bestselling__item__price{
+    color: var(--pink-1);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.bestselling__item__stars{
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    width: max-content;
+}
+.bestselling__item__text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    font-weight: 500;
+    font-style: Poppins;
+    line-height: 20px;
+}
+.bestselling__item #more_details{
+    margin-top: 35px;
+}
+.bestselling__item #more_details:hover{
+    color: var(--black-1);
+    transition: .3s ease-in-out;
+}
+.bestselling__item #more_details1{
+    margin-top: 35px;
+}
+.bestselling__item #more_details1:hover{
+    color: var(--black-1);
+    transition: .3s ease-in-out;
+}
+.bestselling__title{
+    font-size: 1.8rem;
+    color: var(--black-1);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+.bestselling__text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    margin-bottom: 1rem;
+}
+.bestselling__right #moredetails2:hover{
+    color: var(--black-1);
+    transition: .3s ease-in-out;
+}
+.bestselling__text span{
+    color: var(--pink-1);
+}
+/* AKHIR MOBILE DEVICE */
+
+/* Full Layar Device */
+@media only screen and (min-width: 768px){
+    #bestselling{
+        padding-top: 1rem;
+    }
+    #bestselling .container{
+        max-width: 900px;
+    }
+    .bestselling__wrapper{
+        flex-direction: row;
+        margin-top: 0%;
+    }
+    .bestselling__right{
+        flex: 2;
+    }
+    .bestselling__left{
+        flex: 4;
+        gap: 2rem;
+    }
+    .bestselling__item{
+        padding: 2rem;
+    }
+    .bestselling__item__title{
+        font-size: 18px;
+        line-height: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .bestselling__item__price{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .bestselling__item__stars{
+        margin-bottom: 2rem;
+    }
+    .bestselling__item__text{
+        font-size: 1.6rem;
+    }
+    .bestselling__item__img {
+        margin-top: -40px;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        height: 310px;
+        overflow: hidden;
+    }
+    .bestselling__item__img img{
+        object-fit: cover;
+    }
+    .bestselling__title{
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+    }
+    .bestselling__text{
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .bestselling__text span{
+        color: var(--pink-1);
+    }
+    .bestselling__item #more_details{
+        margin-top: 35px;
+    }
+}
+/* Akhir Full Layar Device */
+
+/* layar kecil parah */
+@media only screen and (max-width:300px){
+    .bestselling__left{
+        flex-wrap: wrap;
+        gap: 18rem;
+    }
+    .bestselling__item{
+        width: 100%;
+    }
+    
+}
+/* akhir layar kecil parah */
+
+
+
+/* Akhir Styling Best Seller*/
+
+
+
+/* Customer favorite STYLE */
+/* Mobile Device */
+#Cfavorite{
+    padding-top: 1rem;
+    margin-top: -3rem;
+}
+.Cfavorite__title{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--black-1);
+}
+.Cfavorite__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+.Cfavorite__item{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightpink-1);
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 12px;
+    margin: 0 auto;
+
+}
+.Cfavorite__item__img{
+    flex: 4;
+}
+.Cfavorite__item__info {
+    flex: 5;
+}
+.Cfavorite__item__img img{
+    object-fit: cover;
+    border-radius: 12px;
+}
+.Cfavorite__item__title{
+    font-size: 1.4rem;
+    line-height: 1.1em;
+    font-weight: 600;
+    color: var(--black-1);
+    margin-bottom: .8rem;
+    margin-top: 1rem;
+}
+.Cfavorite__item__price{
+    font-size: 1.4rem;
+    color: var(--pink-1);
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+.Cfavorite__item__stars{
+    width: 35%;
+    margin-bottom: 1rem;
+}
+.checkout a{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.checkout a:hover{
+    color: var(--black-2);
+    transition: .3s ease-in-out;
+}
+
+
+/* Akhir Mobile Device */
+
+/* full layar device */
+@media only screen and (min-width: 768px){
+    #Cfavorite{
+        padding-top: 1rem;
+    }
+    .Cfavorite__title{
+        font-size: 2.4rem;
+    }
+    .Cfavorite__wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 3rem;
+    }
+    .Cfavorite__item{
+        flex-direction: row;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    .Cfavorite__item__title{
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+        font-weight: 500;
+    }
+    .Cfavorite__item__price{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .Cfavorite__item__stars{
+        width: 50%;
+    }
+    .checkout {
+        margin-left: 1000px;
+    }
+    .checkout a{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1233px){
+    .checkout{
+        margin-left: 0px;
+    }
+}
+
+
+/* akhir full layar device */
+/* Akhir Customer favorite STYLE */
+
+
+/* Discount Style */
+/* Mobile Device */
+.discount__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--lightpink-1);
+    margin-top: -150px;
+}
+.discount__image{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.discount__img1{
+    flex: 2;
+}
+.discount__img2{
+    flex: 3;
+}
+.discount__image img{
+    object-fit: cover;
+    border-radius: 12px;
+}
+.discount__text{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--pink-1);
+    margin-bottom: 0.5rem;
+}
+.discount__title{
+    font-size: 2.2rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.discount__price{
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.discount__oldprice{
+    color: var(--black-2);
+    text-decoration: line-through;
+}
+.discount__newprice{
+    color: var(--pink-1);
+}
+.discount__stars{
+    width: max-content;
+    height: 15px;
+    margin-bottom: 1rem;
+}
+#order:hover{
+    color: var(--black-2);
+    transition: .3s ease-in-out;
+}
+@media only screen and (max-width: 1080px){
+    .discount__wrapper{
+        gap: 2rem;
+    }
+    .discount__img3{
+        display: none;
+    }
+}
+/* Full layar website */
+@media only screen and (min-width: 768px){
+    .discount__wrapper{
+        flex-direction: row;
+        gap: 4rem;
+        padding: 2rem;
+        align-items: center;
+        background-size: 150px;
+        margin: 0 auto;
+    }
+    .discount__image{
+        flex: 5;
+        margin-bottom: 0;
+        gap: 2rem;
+    }
+    .discount__img1,
+    .discount__img2,
+    .discount__img3{
+        flex: 1;
+        height: 350px;
+    }
+    .discount__info{
+        flex: 3;
+    }
+    .discount__text{
+        font-size: 2.4rem;
+    }
+    .discount__title{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .discount__price{
+        font-size: 2rem;
+    }
+    .discount__stars{
+        height: 20px;
+        margin-bottom: 2rem;
+    }
+
+}
+/* akhir full layar website */
+
+
+/* akhir mobile device */
+
+
+
+
+/* Akhir Discount Style */
+
+
+/* Event media Style */
+/* Mobile Device */
+.eventmedia__wrapper{
+    margin-top: -150px;
+    display: flex;
+    gap: 1rem;
+}
+.eventmedia__1{
+    position: relative;
+}
+.eventmedia__1__playbutton{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50px;
+}
+.eventmedia__2 img{
+    object-fit: cover;
+}
+
+/* Akhir Mobile Device */
+/* Full layar device */
+@media only screen and (min-width: 768px){
+    .eventmedia__wrapper{
+        gap: 2rem;
+    }
+    .eventmedia__1__playbutton{
+        max-width: 80px;
+    }
+}
+
+
+/* Akhir Full layar device */
+
+/* Akhir Event media Style */
+
+
+/* Event Info Style */
+/* Mobile device */
+#eventinfo{
+    padding-top: 0;
+}
+.eventinfo__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: -160px;
+}
+.eventinfo__item{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--lightpink-1);
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+}
+.eventinfo__item__img{
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 3;
+}
+.eventinfo__item__img img{
+    object-fit: cover;
+}
+.eventinfo__item__info{
+    flex: 4;
+}
+.eventinfo__item__title{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+    font-weight: 600;
+}
+.eventinfo__item__text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+}
+.eventinfo__right{
+    margin-top: 2rem;
+}
+.eventinfo__title{
+    font-size: 1.8rem;
+    color: var(--black-1);
+    margin-bottom: 1rem;
+}
+.eventinfo__text{
+    color: var(--black-2);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+#btn-more:hover{
+    color: var(--black-2);
+    transition: .3s ease-in-out;
+}
+
+/* Akhir Mobile device */
+
+/* full layar website */
+@media only screen and (min-width: 768px){
+    .eventinfo__wrapper{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .eventinfo__right,
+    .eventinfo__left{
+        flex: 1;
+    }
+    .eventinfo__item{
+        padding: 2em;
+        gap: 2rem;
+        max-width: 500px;
+        margin-bottom: 2rem;
+    }
+    .eventinfo__item__title{
+        font-size: 1.8rem;
+    }
+    .eventinfo__item__text{
+        font-size: 1.4rem;
+        line-height: 20px;
+
+    }
+    .eventinfo__title{
+        font-size: 3.6rem;
+    }
+    .eventinfo__text{
+        max-width: 500px;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        line-height: 25px;
+    }
+}
+/* Akhir full layar website */
+
+
+/* Akhir Event Info Style */
+
+
+/* Plus Produk Style */
+/* Mobile Device */
+.plusproduk__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: -100px;
+}
+.plusproduk__left{
+    text-align: center;
+}
+.plusproduk__title{
+    font-family: Poppins;
+    font-size: 1.8rem;
+    color: var(--black-1);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.plusproduk__text{
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+.plusproduk__item__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.plusproduk__item{
+    background-color: var(--lightpink-1);
+    padding: 2rem;
+    border-radius: 12px;
+}
+.plusproduk__item__icon{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.plusproduk__item__text{
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-1);
+    text-align: center;
+}
+/* Akhir Mobile Device */
+
+/* full screen device */
+@media only screen and (min-width: 768px){
+    .plusproduk__wrapper{
+        flex-direction: row;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .plusproduk__left{
+        flex: 4;
+    }
+    .plusproduk__right{
+        flex: 3;
+    }
+    .plusproduk__title{
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    .plusproduk__text{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .plusproduk__item__wrapper{
+        gap: 1.5rem;
+    }
+    .plusproduk__item{
+        padding: 2rem;
+    }
+    .plusproduk__item__icon{
+        width: 50%;
+        margin-bottom: 1.5rem; 
+    }
+}
+
+
+/* Akhir full screen device */
+/* Akhir Plus Produk Style */
+
+
+/* Testimonial styles */
+/* Mobile Device */
+.testimonial__wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -30%;
+}
+.testimonial__title{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--black-1);
+}
+.testimonial__item__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.testimonial__item{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--lightpink-1);
+    border-radius: 15px;
+}
+.testimonial__item__info{
+    flex: 4;
+}
+.testimonial__item__img {
+    flex: 2;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.testimonial__item__img img{
+    object-fit: cover;
+}
+.testimonial__item__name{
+    font-size: 1.6rem;
+    font-family: Poppins;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.testimonial__item__name__info{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--black-2);
+    font-weight: 500;
+}
+.testimonial__item__stars{
+    max-height: 15px;
+    width: 30%;
+    margin-bottom: 1.5rem;
+}
+.testimonial__item__text{
+    font-size: 1.4rem;
+}   
+/* Akhir Mobile Device */
+
+/* Full screen device */
+@media only screen and (min-width: 768px){
+    .testimonial__wrapper{
+        margin-top: -5%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .testimonial__title{
+        font-size: 3.6rem;
+        margin-bottom: 5rem;
+        font-weight: 600;
+    }
+    .testimonial__item__wrapper{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .testimonial__item{
+        padding: 2rem;
+    }
+    .testimonial__item__name{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .testimonial__item__stars{
+        margin-bottom: 2rem;
+    }
+    .testimonial__item__text{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+}
+/* layar kecil parah */
+@media only screen and (max-width: 350px){
+    .testimonial__item{
+        flex-direction: column;
+    }
+    .testimonial__item__img,
+    .testimonial__item__info{
+        flex: auto;
+    }
+}
+/* akhir layar kecil parah */
+/* Akhir Full screen device */
+/* Akhir Testimonial styles */
+
+
+/* newsletter style */
+/* mobile device */
+.newsletter__wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pink-2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    gap: 2rem;
+    margin-top: -100px;
+}
+.newsletter__title{
+    font-size: 1.8rem;
+    color: var(--black-1);
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+.newsletter__text{
+    font-size: 1.4rem;
+    color: var(--black-2);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 20px;
+}
+.newsletter__form form{
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.newsletter__form label{
+    width: 100%;
+}
+.newsletter__form input{
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+    border: none;
+}
+.newsletter__form input::placeholder{
+    color: rgb(168, 166, 166);
+}
+.newsletter__form button[type=submit]{
+    background-color: var(--pink-1);
+    color: var(--white-1);
+    border: none;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.newsletter__form button[type=submit]:hover{
+    color: var(--black-2);
+    transition: .3s ease-in-out;
+}
+
+/* akhir mobile device */
+/* Full screen device */
+@media only screen and (min-width: 768px){
+    .newsletter__wrapper{
+        display: flex;
+        flex-direction: row;
+        padding: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin-left: 305px;
+        margin-top: -100px;
+    }
+    .newsletter__form,
+    .newsletter__info{
+        flex: 1;
+    }
+    .newsletter__title{
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+    }
+    .newsletter__text{
+        font-size: 1.8rem;
+        max-width: 400px;
+    }
+    .newsletter__form{
+        max-width: 500px;
+        border-radius: 12px;
+    }
+    .newsletter__form input{
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+}
+
+/* End Full screen device */
+
+
+/* Akhir newsletter style */

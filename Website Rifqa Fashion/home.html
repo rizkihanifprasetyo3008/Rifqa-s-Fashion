@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="globalstyles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="home.css">
+    <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- css untuk halaman ini -->
+     <!-- Link Favicon -->
+     <link rel="shortcut icon" href="/Hanss Creative Logo.png" type="image/x-icon">
+     <!-- END Link Favicon -->
+
+    <title>Home | Rifqa's Fashion </title>
+</head>
+
+<body>
+    <!-- HTML Section Navigation -->
+    <div class="nav">
+        <div class="container">
+            <!-- logo -->
+            <div class="nav__wrapper">
+                <a href="./home.html" class="logo">
+                    <img src="./images/rifqafashion.svg" alt="Rifqa's Fashion">
+                    <!--buat logo nanti-->
+                </a>
+                <!-- akhir logo -->
+                <!-- navigation -->
+                <nav>
+                    <div class="nav__icon">
+                        <!-- Ambil menu icon dari feather icons -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav__bgOverlay hidden"></div>
+                    <ul class="nav__list ">
+                        <div class="nav__close">
+                            <!-- Ambil close icon dari feather icons -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="nav__list__wrapper">
+                            <li><a href="./home.html" class="nav__link" id="tanda">Home</a></li>
+                            <li><a href="./menu.html" class="nav__link">Fashion</a></li>
+                            <li><a href="./about.html" class="nav__link">About</a></li>
+                            <li><a href="./contact.html" class="nav__link">Contact</a></li>
+                            <li><a href="./booking.html" class="btn primary-btn">Sign-In</a></li>
+                        </div>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End HTML Section Navigation -->
+    <!-- HTML Main Menu / Utama -->
+    <section id="utama">
+        <div class="container">
+            <div class="utama__wrapper">
+                <div class="utama__left" data-aos="fade-left">
+                    <div class="utama__left__wrapper">
+                        <h1 class="utama__heading">Welcome to <br><span>Rifqa's</span> Fashion</h1>
+                        <p class="utama__info"> Rifqa's Fashion is a clothing store that offers a variety of stylish,
+                            contemporary, and inspiring men's and women's clothing.</p>
+                        <div class="button__wrapper">
+                            <a href="./menu.html" class="btn primary-btn">Fashion Menu</a>
+                            <a href="./booking.html" class="btn">Your Groceries History</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="utama__right" data-aos="fade-right">
+                    <div class="utama__imgwrapper">
+                        <img src="./images/fashion3.png" alt="food img" class="img_edit">
+                        <div class="utama__imgwrapper__right">
+                            <img src="./images/Fashion.jpg" alt="food img" id="img__edit">
+                            <img src="./images/fashion2.jpg" alt="food img" id="img__edit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HTML Main Menu / Utama -->
+
+    <!-- HTML Best Selling -->
+    <!-- <section id="bestselling" data-aos="fade-left">
+        <div class="container">
+            <div class="bestselling__wrapper">
+                <div class="bestselling__left">
+                    <div class="bestselling__item">
+                        <div class="bestselling__item__img" id="bestselling__item__img">
+                            <img src="./images/alphatauri.jpg" alt="fashion img">
+                        </div>
+                        <h2 class="bestselling__item__title">ORATA Wool Pea Coat</h2>
+                        <h3 class="bestselling__item__price">Rp.1.255.000,00</h3>
+                        <div class="bestselling__item__stars">
+                            <img src="/images/5star.png" alt="5stars" class="img1">
+                        </div>
+                        <p class="bestselling__item__text">
+                            At first glance, this coat might seem like a classic. But take a closer look and you'll see
+                            that it's anything but basic.
+                            The double-breasted pea coat is made in Europe from a water-resistant wool blend, has two
+                            button plackets on the front,
+                            an emphasized collar that's knitted for added warmth, and two side pockets to keep your
+                            hands warm on those cold winter days.
+                        </p>
+                        <a href="./menu.html" class="btn primary-btn" id="more_details1">More Details!</a>
+                    </div>
+                    <div class="bestselling__item">
+                        <div class="bestselling__item__img" id="bestselling__item__img2">
+                            <img src="./images/alphatauri5.jpg" alt="fashion img" class="img__pierre">
+                        </div>
+                        <h2 class="bestselling__item__title">Merino-Blend Monogram</h2>
+                        <h3 class="bestselling__item__price">Rp.1.455.000,00</h3>
+                        <div class="bestselling__item__stars">
+                            <img src="/images/4star.jpg" alt="5stars">
+                        </div>
+                        <p class="bestselling__item__text">
+                            It's cold outside, but you still want to feel stylish. Our Mens Merino-Blend Monogram
+                            Cardigan is the perfect way to stay warm and look chic.
+                            Made in Italy from our signature merino blend, this cardigan offers a great option for
+                            layering or wearing on its own. The flattering shape of the
+                            cardigan will keep you looking your best all winter long.
+                        </p>
+                        <a href="./menu.html" class="btn primary-btn" id="more_details">More Details!</a>
+                    </div>
+                </div>
+                <div class="bestselling__right">
+                    <h2 class="bestselling__title">Our Best Selling!</h2>
+                    <p class="bestselling__text">
+                        <span>Rifqa's</span> Fashion has a colorful knitwear that include 3D knit technology. Minimal
+                        waste and
+                        Maximum comfort.
+                    </p>
+                    <a href="./menu.html" class="btn primary-btn" id="moredetails2">Check out another Clothing</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- End HTML Best Selling -->
+   
+    <!-- HTML Discount -->
+    <section id="discount" data-aos="fade-up">
+        <div class="container">
+            <div class="discount__wrapper">
+                <div class="discount__image">
+                    <div class="discount__img1">
+                        <img src="./images/alphatauriwinter.jpg" alt="winter">
+                    </div>
+                    <div class="discount__img2">
+                        <img src="./images/alphatauriwinter2.jpg" alt="winter">
+                    </div>
+                    <div class="discount__img3">
+                        <img src="./images/alphatauriwinter3.jpg" alt="winter">
+                    </div>
+                </div>
+                <div class="discount__info">
+                    <h3 class="discount__text">20% OFF</h3>
+                    <h3 class="discount__title">Winter Special Discount</h3>
+                    <h3 class="discount__price">
+                        <span class="discount__oldprice">Rp. 1.115.000,00</span>
+                        <span class="discount__newprice">Rp. 999.000,00</span>
+                    </h3>
+                        <!-- <div class="discount__stars">
+                            <img src="./images/4star.jpg" alt="stars">
+                        </div> -->
+                    <a href="#" class="btn primary-btn" id="order">Order Now !</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HTML Discount -->
+     <!-- HTML Customer Favorite -->
+     <section id="Cfavorite" data-aos="fade-up">
+        <div class="container">
+            <h2 class="Cfavorite__title">
+                Customer's Favorite
+            </h2>
+            <div class="Cfavorite__wrapper">
+                <div class="Cfavorite__item">
+                    <div class="Cfavorite__item__img">
+                        <img src="./images/alphatauri6.jpg" alt="image">
+                    </div>
+                    <div class="Cfavorite__item__info">
+                        <h3 class="Cfavorite__item__title">
+                            Suede Leather Bomber Jacket
+                        </h3>
+                        <h3 class="Cfavorite__item__price">
+                            Rp. 1.125.000,00
+                        </h3>
+                        <div class="Cfavorite__item__stars">
+                            <img src="./images/5star.png" alt="stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="Cfavorite__item">
+                    <div class="Cfavorite__item__img">
+                        <img src="./images/alphatauri7.jpg" alt="image">
+                    </div>
+                    <div class="Cfavorite__item__info">
+                        <h3 class="Cfavorite__item__title">
+                            Wool Blazer with PrimaLoft Padding
+                        </h3>
+                        <h3 class="Cfavorite__item__price">
+                            Rp. 1.525.000,00
+                        </h3>
+                        <div class="Cfavorite__item__stars">
+                            <img src="./images/4star.jpg" alt="stars">
+                        </div>
+                    </div>
+                </div>
+                <div class="Cfavorite__item">
+                    <div class="Cfavorite__item__img">
+                        <img src="./images/alphatauri4.jpg" alt="image">
+                    </div>
+                    <div class="Cfavorite__item__info">
+                        <h3 class="Cfavorite__item__title">
+                            PrimaLoft Maxi Puffer Coat
+                        </h3>
+                        <h3 class="Cfavorite__item__price">
+                            Rp. 925.000,00
+                        </h3>
+                        <div class="Cfavorite__item__stars">
+                            <img src="./images/4star.jpg" alt="stars">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="checkout">
+                <a href="./menu.html" class="btn primary-btn">Check Out More! -></a>
+            </h3>
+        </div>
+    </section>
+
+    <!-- END HTML Customer Favorite -->
+
+    <!-- HTML Event Media -->
+    <section id="eventmedia" data-aos="fade-up">
+        <div class="container">
+            <div class="eventmedia__wrapper">
+                <div class="eventmedia__1">
+                    <img src="./images/fashionshow.jpg" alt="event">
+                    <a href="#" class="eventmedia__1__playbutton">
+                        <img src="./images/icons8-play-button-circled-color/icons8-play-button-circled-100.png"
+                            alt="play button">
+                    </a>
+                </div>
+                <div class="eventmedia__2">
+                    <img src="./images/fashionshop.jpg" alt="events">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HTML Event Media -->
+    <!-- HTML Event Info -->
+    <section class="eventinfo" data-aos="fade-left">
+        <div class="container">
+            <div class="eventinfo__wrapper">
+                <div class="eventinfo__left">
+                    <div class="eventinfo__item">
+                        <div class="eventinfo__item__img">
+                            <img src="./images/fashionshop2.jpg" alt="shop">
+                        </div>
+                        <div class="eventinfo__item__info">
+                            <h2 class="eventinfo__item__title"><span>Rifqa's</span>Fashion Launch in Singapore</h2>
+                            <p class="eventinfo__item__text">
+                                New horizons. Rifqa's Fashion is expanding its presence in the Asian market with the
+                                official launch of an online boutique in Singapore.
+                                Effective May 25, AlphaTauri is available online in Singapore at Rifqa's Fashion
+                                official website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="eventinfo__item">
+                        <div class="eventinfo__item__img">
+                            <img src="./images/fashionsergio.jpg" alt="shop">
+                        </div>
+                        <div class="eventinfo__item__info">
+                            <h2 class="eventinfo__item__title">Collaboration with Formula 1 Stars</h2>
+                            <p class="eventinfo__item__text">
+                                A couple of months back Rifqa's Fashion invited Sergio Perez to explore the world of a
+                                premium fashion brand.
+                                He was taken through the showroom and got to dive deep into the technologies, premium
+                                materials and
+                                functional designs that define Rifqa's Fashion clothing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eventinfo__right">
+                    <h2 class="eventinfo__title">
+                        Our Stories
+                    </h2>
+                    <p class="eventinfo__text">
+                        Our recent stories from Rifqa's Fashion the event that being held recently.
+                    </p>
+                    <a href="./about.html" class="btn primary-btn" id="btn-more">Find out More!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HTML Event Info -->
+
+    <!-- Kelebihan produk -->
+    <section class="plusproduk">
+        <div class="container">
+            <div class="plusproduk__wrapper">
+                <div class="plusproduk__left" data-aos="fade-right">
+                    <h2 class="plusproduk__title">
+                        Why Choosing Our Brand ?
+                    </h2>
+                    <p class="plusproduk__text">
+                        Rifqa's Fashion is a stand-alone fashion brand that offers innovative fashion
+                        technologies integrated with high-quality and uniquely designed styles. The brand combines
+                        textile innovations, purposeful design and premium materials to add value to both body and mind.
+                        What makes Rifqa's Fashion unique is the combination of: Innovation and purposeful design, Pioneering
+                        technologies, Premium fabrics and materials.
+                    </p>
+                </div>
+                <div class="plusproduk__right" data-aos="fade-left">
+                    <div class="plusproduk__item__wrapper">
+                        <div class="plusproduk__item">
+                            <div class="plusproduk__item__icon">
+                                <img src="./images/icons8-blazer-victoruler-outline/icons8-blazer-100.png" alt="Premium Materials">
+                            </div>
+                            <p class="plusproduk__item__text">Premium Materials</p>
+                        </div>
+                        <div class="plusproduk__item">
+                            <div class="plusproduk__item__icon">
+                                <img src="./images/icons8-clothes-obvious-glyph/icons8-clothes-100.png" alt="Purposeful Design">
+                            </div>
+                            <p class="plusproduk__item__text">Innovation & Purposeful Design</p>
+                        </div>
+                        <div class="plusproduk__item">
+                            <div class="plusproduk__item__icon">
+                                <img src="./images/icons8-technology-parzival’-1997-detailed-outline/icons8-technology-100.png" alt="Smart Technology">
+                            </div>
+                            <p class="plusproduk__item__text">Smart Technology & Clever Features </p>
+                        </div>
+                        <div class="plusproduk__item">
+                            <div class="plusproduk__item__icon">
+                                <img src="./images/icons8-waterproof-outline/icons8-waterproof-100.png" alt="Waterproof">
+                            </div>
+                            <p class="plusproduk__item__text">Waterproof, Breathable, soft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Kelebihan produk -->
+    <!-- HTML Testimonial -->
+    <section id="testimonial" data-aos="fade-up">
+        <div class="container">
+            <div class="testimonial__wrapper">
+                <h2 class="testimonial__title">Customer's Testimonial</h2>
+                <div class="testimonial__item__wrapper">
+                    <div class="testimonial__item">
+                        <div class="testimonial__item__img">
+                            <img src="./images/sergioperez.jpg" alt="testimonial" class="img__critic">
+                        </div>
+                        <div class="testimonial__item__info">
+                            <h3 class="testimonial__item__name">Sergio Perez</h3>
+                            <h4 class="testimonial__item__name__info">"Formula 1 Driver / Brand Ambassador Rifqa's Fashion"</h4>
+                            <div class="testimonial__item__stars">
+                                <img src="./images/5star.png" alt="stars">
+                            </div>
+                            <p class="testimonial__item__text">
+                                "I just Loved the fashion style from this brand, it was one of the best i've ever seen in my life,
+                                the innovations, features, and of course comfortable to wear."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial__item">
+                        <div class="testimonial__item__img">
+                            <img src="./images/fashionemma.jpg" alt="testimonial" class="img__critic">
+                        </div>
+                        <div class="testimonial__item__info">
+                            <h3 class="testimonial__item__name">Emma Stone</h3>
+                            <h4 class="testimonial__item__name__info">"BAFTA Best Actress 2016"</h4>
+                            <div class="testimonial__item__stars">
+                                <img src="./images/4star.jpg" alt="stars">
+                            </div>
+                            <p class="testimonial__item__text">
+                                "I just Loved the fashion style from this brand, it was one of the best i've ever seen in my life,
+                                the innovations, features, and of course comfortable to wear."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial__item">
+                        <div class="testimonial__item__img">
+                            <img src="./images/fashionjamie.jpg" alt="testimonial" class="img__critic">
+                        </div>
+                        <div class="testimonial__item__info">
+                            <h3 class="testimonial__item__name">Jamie Maguire</h3>
+                            <h4 class="testimonial__item__name__info">"Fashion Paris Critic"</h4>
+                            <div class="testimonial__item__stars">
+                                <img src="./images/4star.jpg" alt="stars">
+                            </div>
+                            <p class="testimonial__item__text">
+                                "I just Loved the fashion style from this brand, it was one of the best i've ever seen in my life,
+                                the innovations, features, and of course comfortable to wear."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial__item">
+                        <div class="testimonial__item__img">
+                            <img src="./images/fashionelena.jpg" alt="testimonial" class="img__critic">
+                        </div>
+                        <div class="testimonial__item__info">
+                            <h3 class="testimonial__item__name">Elena Harper</h3>
+                            <h4 class="testimonial__item__name__info">"Asian Female Model Winner 2020"</h4>
+                            <div class="testimonial__item__stars">
+                                <img src="./images/5star.png" alt="stars">
+                            </div>
+                            <p class="testimonial__item__text">
+                                "I just Loved the fashion style from this brand, it was one of the best i've ever seen in my life,
+                                the innovations, features, and of course comfortable to wear."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HTML Testimonial -->
+
+
+
+    <!-- HTML Info Toko -->
+    <section id="storeinfo" data-aos="fade-up">
+        <div class="container">
+            <div class="storeinfo__wrapper">
+                <div class="storeinfo__item">
+                    <div class="storeinfo__icon">
+                        <img src="./images/icons8-clock-color/icons8-clock-240.png" alt="icon">
+                    </div>
+                    <h3 class="storeinfo__title">
+                        09:00 AM - 22:00 PM
+                    </h3>
+                    <p class="storeinfo__text">
+                        Operational Hours
+                    </p>
+                </div>
+                <div class="storeinfo__item">
+                    <div class="storeinfo__icon">
+                        <img src="./images/icons8-address-100.png" alt="icon">
+                    </div>
+                    <h3 class="storeinfo__title">
+                        Pesantren 06 Street, Cimahi.
+                    </h3>
+                    <p class="storeinfo__text">
+                        Address
+                    </p>
+                </div>
+                <div class="storeinfo__item">
+                    <div class="storeinfo__icon">
+                        <img src="./images/icons8-phone-color/icons8-phone-240.png" alt="icon">
+                    </div>
+                    <h3 class="storeinfo__title">
+                        +62 834 431 4313
+                    </h3>
+                    <p class="storeinfo__text">
+                        Call Now!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HTML Info Toko -->
+    <!-- Newsletter Section -->
+    <section id="newsletter" data-aos="fade-up">
+        <div class="container">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__info">
+                    <h3 class="newsletter__title">
+                        Join Newsletter
+                    </h3>
+                    <p class="newsletter__text">
+                        Get Notified with our latest news and recent offers from " Rifqa's Fashion"
+                    </p>
+                    <div class="newsletter__form">
+                        <form>
+                            <label for="email">
+                                <input type="email" placeholder="Input Your Email Here">
+                            </label>
+                            <button type="submit">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Newsletter Section -->
+
+    <!-- HTML Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col1">
+                    <div class="footer__logo">
+                        <img src="./images/rifqafashion.svg" alt="Rifqa's Fashion">
+                    </div>
+                    <p class="footer__desc">
+                        "Every day is a fashion show, and the world is your runway."
+                    </p>
+                    <div class="footer__socials">
+                        <h4 class="footer__socials__title">Follow Us</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#000" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__col2">
+                    <h3 class="footer__text__title">
+                        Links
+                    </h3>
+                    <ul class="footer__Text">
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./menu.html">Fashion Menu</a>
+                        </li>
+                        <li>
+                            <a href="./booking.html">Account</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col3">
+                    <h3 class="footer__text__title">
+                        Support
+                    </h3>
+                    <ul class="footer__Text">
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="#">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__col4">
+                    <h3 class="footer__text__title">
+                        Contact
+                    </h3>
+                    <ul class="footer__Text">
+                        <li>
+                            <a href="#">+62 546 467 8373</a>
+                        </li>
+                        <li>
+                            <a href="#">RifqaFashion@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#">Pesantren 06 Street, Cimahi, West Java, Indonesia.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <div class="container">
+            <p class="copyright__text">
+                © copyright 2022 Rifqa's Fashion | All rights reserved
+            </p>
+        </div>
+    </div>
+    <!-- End HTML Akhir Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- fungsi untuk swipe menu buat hp -->
+    <script src="/main.js"></script>
+    <!-- akhir fungsi untuk swipe menu buat hp -->
+</body>
+
+</html>
